@@ -137,7 +137,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     with gr.Row():
         gr.Examples(
             examples=data_examples,
-            fn=gpu_wrapped_execute_video,
+            #fn=gpu_wrapped_execute_video,
             inputs=[
                 image_input,
                 video_input,
@@ -197,7 +197,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
         show_progress=True
     )
     process_button_animation.click(
-        fn=gpu_wrapped_execute_video,
+        #fn=gpu_wrapped_execute_video,
         inputs=[
             image_input,
             video_input,
