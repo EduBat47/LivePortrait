@@ -12,7 +12,7 @@ from src.gradio_pipeline import GradioPipeline
 from src.config.crop_config import CropConfig
 from src.config.argument_config import ArgumentConfig
 from src.config.inference_config import InferenceConfig
-import spaces
+#import spaces
 import cv2
 
 # import gdown
