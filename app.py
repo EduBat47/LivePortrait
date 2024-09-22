@@ -36,13 +36,13 @@ gradio_pipeline = GradioPipeline(
     args=args
 )
 
-@spaces.GPU(duration=240)
-def gpu_wrapped_execute_video(*args, **kwargs):
-    return gradio_pipeline.execute_video(*args, **kwargs)
+#@spaces.GPU(duration=240)
+#def gpu_wrapped_execute_video(*args, **kwargs):
+    #return gradio_pipeline.execute_video(*args, **kwargs)
 
-@spaces.GPU(duration=240)
-def gpu_wrapped_execute_image(*args, **kwargs):
-    return gradio_pipeline.execute_image(*args, **kwargs)
+#@spaces.GPU(duration=240)
+#def gpu_wrapped_execute_image(*args, **kwargs):
+   # return gradio_pipeline.execute_image(*args, **kwargs)
 
 def is_square_video(video_path):
     video = cv2.VideoCapture(video_path)
