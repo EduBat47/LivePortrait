@@ -191,7 +191,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     # binding functions for buttons
     process_button_retargeting.click(
         # fn=gradio_pipeline.execute_image,
-        fn=gpu_wrapped_execute_image,
+        #fn=gpu_wrapped_execute_image,
         inputs=[eye_retargeting_slider, lip_retargeting_slider, retargeting_input_image, flag_do_crop_input],
         outputs=[output_image, output_image_paste_back],
         show_progress=True
